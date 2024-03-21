@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/output.css" rel="stylesheet" />
+  </head>
+  <body class="container mx-auto m-0 p-0 bg-white">
+    <!-- header section -->
+    <header
+      class="w-full xxs:h-16 md:h-20 lg:fixed lg:top-0 lg:left-0 z-20 bg-white"
+    >
+      <div class="container mx-auto">
+        <nav class="flex items-center justify-between h-20 gap-8">
+          <div class="logo-container">
+            <img
+              class="h-20 xxs:w-9 md:w-14 rounded-sm overflow-hidden"
+              src="./src/svg logo/logo.svg"
+              alt="logo"
+              loading="lazy"
+            />
+          </div>
+          <div
+            class="dropdown-menu absolute -top-full left-0 max-lg:bg-black w-full items-center flex flex-col gap-6 text-grey font-semibold xxs:text-sm sm:text-md md:text-lg lg:text-xl xl:text-xl lg:static lg:flex-row lg:justify-end"
+          >
+            <div class="navigation-container">
+              <ul
+                class="flex flex-col items-center justify-between mx-auto gap-6 lg:flex-row lg:gap-10 text-black"
+              >
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#proposal">Proposals</a></li>
+                <li><a href="#case-study">Case Study</a></li>
+              </ul>
+            </div>
+            <a
+              class="animate-me m-3 xs:mx-auto lg:mx-0 xxs:h-[40px] sm:h-[57px] md:h-[40px] lg:h-[57px] xl:h-[57px] xxs:w-[150px] sm:w-[200px] md:w-[200px] lg:w-[200px] xl:w-[200px] py-2 flex items-center justify-center rounded-xl bg-white hover:shadow-md text-black transition duration-150 ease-linear xxs:text-sm lg:text-xl xxs:py-1 text-nowrap border-[2px] border-black hover:invert"
+              href="#contact-me"
+              >Contact Us</a
+            >
+          </div>
+          <div
+            id="js-navbar-toggle"
+            class="toggle-button lg:hidden md:h-16 border-2 border-black"
+          >
+            <img
+              class="h-8 w-8"
+              src="./src/img-folder/icons-folder/icons8-menu.svg"
+              alt="menu logo"
+            />
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="py-20">
+      <!-- hero section -->
+      <section id="home" class="hero-section h-[600px] w-full flex mt-20">
+        <div class="content-section h-full w-1/2 pt-20">
+          <h1
+            class="text-left xxs:text-lg sm:text-2xl md:text-2xl lg:text-2xl xl:text-8xl font-[300px] mb-4 text-black"
+          >
+            Navigating the digital landscape for success
+          </h1>
+          <p
+            class="animate-me xxs:text-sm sm:text-sm md:text-md lg:text-lg xl:text-lg xxs:text-center md:text-left mb-3 text-black"
+          >
+            Our digital marketing agency helps businesses grow and succeed
+            online through a range of services including Web Design & Web
+            Development, SEO, PPC, social media marketing, and content creation.
+          </p>
+          <a
+            class="animate-me m-3 xs:mx-auto lg:mx-0 xxs:h-[40px] sm:h-[57px] md:h-[40px] lg:h-[57px] xl:h-[57px] xxs:w-[150px] sm:w-[300px] md:w-[300px] lg:w-[300px] xl:w-[300px] py-2 flex items-center justify-center rounded-xl bg-black hover:shadow-md text-white transition duration-150 ease-linear xxs:text-sm lg:text-xl xxs:py-1 text-nowrap border-[2px] border-black hover:bg-white hover:text-black"
+            href="#contact-me"
+            >Book a consultation</a
+          >
+        </div>
+
+        <div class="image-section h-full w-1/2 flex justify-end items-center">
+          <img class="h-[80%]" src="./src/image/hero-image.png" alt="" />
+        </div>
+      </section>
+
+      <!-- logos section -->
+      <section class="logo-container flex justify-evenly mt-20">
+        <div class="amazon h-[100px] w-[250px] overflow-hidden">
+          <img
+            class="h-[50px] mt-5 logo"
+            src="./src/svg logo/Amazon_logo.svg"
+            alt=""
+          />
+        </div>
+        <div class="dribble h-[100px] w-[250px] overflow-hidden">
+          <img
+            class="h-[50px] mx-auto mt-5 logo2"
+            src="./src/svg logo/Dribbble_Text_Logo_Script.svg"
+            alt=""
+          />
+        </div>
+        <div class="hubspot h-[100px] w-[250px] overflow-hidden">
+          <img
+            class="h-[55px] mx-auto mt-5 logo"
+            src="./src/svg logo/hubspot.svg"
+            alt=""
+          />
+        </div>
+
+        <div class="notion h-[100px] w-[250px] overflow-hidden">
+          <img
+            class="h-[50px] mx-auto mt-5 logo2"
+            src="./src/svg logo/notion_logo.svg"
+            alt=""
+          />
+        </div>
+        <div class="netflix h-[100px] w-[250px] overflow-hidden">
+          <img
+            class="h-[50px] mx-auto mt-5 logo"
+            src="./src/svg logo/Netflix_2015_logo.svg"
+            alt=""
+          />
+        </div>
+        <div class="zoom h-[100px] w-[250px] overflow-hidden">
+          <img
+            class="h-[50px] ml-7 mt-5 logo2"
+            src="./src/svg logo/Zoom_Logo_2022.svg"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <!-- services section -->
+      <section id="services" class="services-section mt-20">
+        <div class="flex h-32 w-[800px]">
+          <h1
+            class="text-left xxs:text-lg sm:text-2xl md:text-2xl lg:text-2xl xl:text-5xl font-semibold mb-4 text-black pr-5"
+          >
+            <span class="highlight highlight1">Services</span>
+          </h1>
+          <p
+            class="animate-me xxs:text-sm sm:text-sm md:text-md lg:text-lg xl:text-lg xxs:text-center md:text-left mb-3 text-black pl-5"
+          >
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse illo
+            nihil a laborum minus, nostrum nam architecto sint animi porro eos
+            incidunt enim sed aperiam earum! Officia quos at tempora.
+          </p>
+        </div>
+        <div
+          class="content-container grid-container grid place-items-center xxs:grid-col-1 lg:grid-cols-2 xxs:gap-5 lg:gap-11 xl:gap-10"
+        >
+          <div
+            class="SEO h-[300px] w-[740px] rounded-[50px] flex overflow-hidden box-shadow1"
+          >
+            <div class="content-container w-1/2 h-full items-center">
+              <div class="heading h-[60%] w-[80%]">
+                <h1
+                  class="text-left xxs:text-lg sm:text-2xl md:text-2xl lg:text-3xl xl:text-3xl font-semibold mb-4 text-black pl-7 pt-12"
+                >
+                  <span class="highlight highlight1"
+                    >Search engine optimization</span
+                  >
+                </h1>
+              </div>
+              <div class="link h-[80px] w-full">
+                <button id="videobutton" class="h-[60px] w-[200px] pl-7">
+                  <a href="#">
+                    <div
+                      class="flex hover:text-greenish transition duration-150 ease-linear"
+                    >
+                      <div
+                        class="animated-logo p-1 h-[40px] w-[40px] shadow-lg bg-white rounded-full overflow-hidden"
+                      >
+                        <video
+                          id="video-logo"
+                          src="./src/logo folder/animated-logo.mp4"
+                          autoplay
+                          loop
+                        ></video>
+                      </div>
+                      <div class="content-container pl-3 pt-2">
+                        <h1>Learn more</h1>
+                      </div>
+                    </div>
+                  </a>
+                </button>
+              </div>
+            </div>
+            <div class="image-container w-1/2 h-full">
+              <img
+                class="mt-9 ml-8 h-[80%]"
+                src="./src/image/search.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            class="SEO h-[300px] w-[740px] rounded-[50px] flex overflow-hidden box-shadow1 bg-black"
+          >
+            <div class="content-container w-1/2 h-full items-center">
+              <div class="heading h-[60%] w-[80%]">
+                <h1
+                  class="text-left xxs:text-lg sm:text-2xl md:text-2xl lg:text-3xl xl:text-3xl font-semibold mb-4 text-black pl-7 pt-12"
+                >
+                  <span class="highlight highlight2"
+                    >Pay per click advertising</span
+                  >
+                </h1>
+              </div>
+              <div class="link h-[80px] w-full">
+                <button id="videobutton1" class="h-[60px] w-[200px] pl-7">
+                  <a href=""
+                    ><div
+                      class="flex hover:text-greenish transition duration-150 ease-linear"
+                    >
+                      <div
+                        class="animated-logo p-1 h-[40px] w-[40px] rounded-full overflow-hidden bg-white"
+                      >
+                        <video
+                          id="video-logo1"
+                          src="./src/logo folder/animated-logo.mp4"
+                        ></video>
+                      </div>
+                      <div class="content-container pl-3 pt-2 text-white">
+                        <h1>Learn more</h1>
+                      </div>
+                    </div>
+                  </a>
+                </button>
+              </div>
+            </div>
+            <div class="content-container w-1/2 h-full">
+              <img
+                class="h-[80%] mt-8 ml-6 invert"
+                src="./src/image/pay-per-click.png"
+                alt=""
+                srcset=""
+              />
+            </div>
+          </div>
+          <div
+            class="SEO h-[300px] w-[740px] rounded-[50px] flex overflow-hidden box-shadow1 bg-black"
+          >
+            <div class="content-container w-1/2 h-full items-center">
+              <div class="heading h-[60%] w-[80%]">
+                <h1
+                  class="text-left xxs:text-lg sm:text-2xl md:text-2xl lg:text-3xl xl:text-3xl font-semibold mb-4 text-black pl-7 pt-12"
+                >
+                  <span class="highlight highlight2"
+                    >Social media marketing</span
+                  >
+                </h1>
+              </div>
+              <div class="link h-[80px] w-full">
+                <button id="videobutton2" class="h-[60px] w-[200px] pl-7">
+                  <a href=""
+                    ><div
+                      class="flex hover:text-greenish transition duration-150 ease-linear"
+                    >
+                      <div
+                        class="animated-logo p-1 h-[40px] w-[40px] rounded-full overflow-hidden bg-white"
+                      >
+                        <video
+                          id="video-logo2"
+                          src="./src/logo folder/animated-logo.mp4"
+                        ></video>
+                      </div>
+                      <div class="content-container pl-3 pt-2 text-white">
+                        <h1>Learn more</h1>
+                      </div>
+                    </div>
+                  </a>
+                </button>
+              </div>
+            </div>
+            <div class="content-container w-1/2 h-full">
+              <img
+                class="h-[60%] mt-14 ml-2 invert"
+                src="./src/image/social-media.png"
+                alt=""
+                srcset=""
+              />
+            </div>
+          </div>
+          <div
+            class="SEO h-[300px] w-[740px] rounded-[50px] flex overflow-hidden box-shadow1"
+          >
+            <div class="content-container w-1/2 h-full items-center">
+              <div class="heading h-[60%] w-[80%]">
+                <h1
+                  class="text-left xxs:text-lg sm:text-2xl md:text-2xl lg:text-3xl xl:text-3xl font-semibold mb-4 text-black pl-7 pt-12"
+                >
+                  <span class="highlight highlight1">E-mail marketing</span>
+                </h1>
+              </div>
+              <div class="link h-[80px] w-full">
+                <button id="videobutton3" class="h-[60px] w-[200px] pl-7">
+                  <a href=""
+                    ><div
+                      class="flex hover:text-greenish transition duration-150 ease-linear"
+                    >
+                      <div
+                        class="animated-logo p-1 h-[40px] w-[40px] rounded-full overflow-hidden bg-white"
+                      >
+                        <video
+                          id="video-logo3"
+                          src="./src/logo folder/animated-logo.mp4"
+                        ></video>
+                      </div>
+                      <div class="content-container pl-3 pt-2">
+                        <h1>Learn more</h1>
+                      </div>
+                    </div>
+                  </a>
+                </button>
+              </div>
+            </div>
+            <div class="image-container w-1/2 h-full">
+              <img
+                class="h-[80%] mt-9 ml-10"
+                src="./src/image/email-marketing.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- proposal section -->
+      <section
+        id="proposal"
+        class="proposal-section h-[300px] w-full bg-offwhite rounded-[50px] my-10 flex box-shadow1"
+      >
+        <div class="content-container h-full w-2/3 pl-5">
+          <h1
+            class="text-left xxs:text-lg sm:text-2xl md:text-2xl lg:text-3xl xl:text-3xl font-semibold mb-4 text-black pl-5 pt-12"
+          >
+            <span class="highlight highlight1">Let's make things happen</span>
+          </h1>
+          <p
+            class="animate-me xxs:text-sm sm:text-sm md:text-md lg:text-lg xl:text-lg xxs:text-center md:text-left mb-3 text-black pl-5"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit amet
+            aliquid commodi non incidunt quae voluptatum, qui adipisci numquam,
+            cum vero eligendi reprehenderit, quam quaerat error ad ducimus
+            blanditiis in!
+          </p>
+          <div class="ml-5">
+            <a
+              class="animate-me xs:mx-auto lg:mx-0 xxs:h-[40px] sm:h-[57px] md:h-[40px] lg:h-[57px] xl:h-[57px] xxs:w-[150px] sm:w-[400px] md:w-[400px] lg:w-[400px] xl:w-[400px] py-2 flex items-center justify-center rounded-xl bg-black hover:shadow-md text-white transition duration-150 ease-linear xxs:text-sm lg:text-xl xxs:py-1 text-nowrap border-[2px] border-black hover:bg-white hover:text-black"
+              href="#contact-me"
+              >Get your free proposal</a
+            >
+          </div>
+        </div>
+
+        <div class="image-container h-full w-1/3">
+          <img
+            class="relative top-[-50px] h-[400px] ml-12"
+            src="./src/image/image3.png"
+            alt=""
+            srcset=""
+          />
+        </div>
+      </section>
+
+      <!-- case study -->
+      <section id="case-study" class="case-study-section flex w-[70%] my-32">
+        <h1
+          class="text-left xxs:text-lg sm:text-2xl md:text-2xl lg:text-2xl xl:text-4xl font-semibold mb-4 text-black w-[500px] mt-4"
+        >
+          <span class="highlight highlight1">Case Study</span>
+        </h1>
+        <p
+          class="animate-me xxs:text-sm sm:text-sm md:text-md lg:text-lg xl:text-lg xxs:text-center md:text-left mb-3 text-black"
+        >
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam dolor
+          eveniet mollitia excepturi minima, repudiandae amet magni cumque
+          molestiae dolorem, architecto recusandae quo perferendis dignissimos
+          cum nihil quasi, assumenda optio?
+        </p>
+      </section>
+
+      <!-- contact me section -->
+      <section>
+        <div
+          id="contact-me"
+          class="shadow-lg rounded-[50px] h-[700px] w-full py-12 box-shadow1"
+        >
+          <h2
+            class="animate-me xxs:text-lg xxs:text-center xl:text-left sm:text-2xl md:text-2xl lg:text-2xl xl:text-3xl font-semibold mb-4 text-black ml-12"
+          >
+            <span class="highlight highlight1">Contact Us</span>
+          </h2>
+          <form action="" method="POST" class="flex flex-col">
+            <h2
+              class="animate-me text-semibold text-black xxs:text-sm md:text-xl lg:text-xl my-3 ml-14"
+            >
+              Name
+            </h2>
+            <input
+              class="outline-none rounded-lg focus:border-[1px] h-12 px-3 xxs:w-full md:w-[500px] lg:w-[650px] xxs:text-sm sm:text-lg md:text-lg lg:text-md xl:text-md bg-offwhite text-grey ml-12"
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
+            <h2
+              class="animate-me text-semibold text-black xxs:text-sm md:text-xl lg:text-xl my-3 ml-14"
+            >
+              Email
+            </h2>
+            <input
+              class="outline-none rounded-lg focus:border-[1px] h-12 px-3 xxs:w-full md:w-[500px] lg:w-[650px] xxs:text-sm sm:text-lg md:text-lg lg:text-md xl:text-md bg-offwhite text-grey ml-12"
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <h2
+              class="animate-me text-semibold text-black xxs:text-sm md:text-xl lg:text-xl my-3 ml-12"
+            >
+              Subject
+            </h2>
+            <input
+              class="outline-none rounded-lg focus:border-[1px] h-12 px-3 xxs:w-full md:w-[500px] lg:w-[650px] xxs:text-sm sm:text-lg md:text-lg lg:text-md xl:text-md bg-offwhite text-grey ml-12"
+              type="text"
+              name="subject"
+              placeholder="Your Subject"
+              required
+            />
+            <h2
+              class="animate-me text-semibold text-black xxs:text-sm md:text-xl lg:text-xl my-3 ml-12"
+            >
+              Message
+            </h2>
+            <textarea
+              class="outline-none rounded-lg focus:border-[1px] lg:h-24 pt-3 px-3 xxs:w-full md:w-[500px] lg:w-[650px] xxs:text-sm sm:text-lg md:text-lg lg:text-md xl:text-md bg-offwhite text-grey ml-12"
+              placeholder="Enter your message"
+              name="message"
+              rows="4"
+              required
+            ></textarea>
+            <button
+              class="animate-me m-3 ml-14 xxs:h-[40px] sm:h-[57px] md:h-[40px] lg:h-[57px] xl:h-[57px] xxs:w-[150px] sm:w-[200px] md:w-[200px] lg:w-[200px] xl:w-[200px] py-2 flex items-center justify-center rounded-xl bg-white hover:shadow-md text-black transition duration-150 ease-linear xxs:text-sm lg:text-xl xxs:py-1 text-nowrap border-[2px] border-black hover:invert"
+              type="submit"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </section>
+      <!-- footer section -->
+      <footer
+        class="h-[500px] w-full rounded-[50px] flex my-5 bg-black items-center"
+      >
+        <div class="h-[300px] w-1/3 border-r-white text-white px-7">
+          <p
+            class="animate-me xxs:text-sm sm:text-sm md:text-md lg:text-lg xl:text-lg xxs:text-center md:text-left mb-3 pl-7 mt-6"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+            temporibus, deleniti saepe totam excepturi dicta eius tempore atque
+            suscipit est illum repudiandae possimus ipsum dolorum eos officiis
+            voluptates natus quis.
+          </p>
+          <div class="link h-[80px] w-full mt-16">
+            <button id="videobutton6" class="h-[60px] w-[200px] pl-7">
+              <a href=""
+                ><div
+                  class="flex hover:text-greenish transition duration-150 ease-linear"
+                >
+                  <div
+                    class="animated-logo p-1 h-[40px] w-[40px] bg-white rounded-full overflow-hidden"
+                  >
+                    <video
+                      id="video-logo6"
+                      src="./src/logo folder/animated-logo.mp4"
+                    ></video>
+                  </div>
+                  <div class="content-container pl-3 pt-2">
+                    <h1>Learn more</h1>
+                  </div>
+                </div>
+              </a>
+            </button>
+          </div>
+        </div>
+        <div class="h-[300px] w-1/3 text-white px-7">
+          <p
+            class="animate-me xxs:text-sm sm:text-sm md:text-md lg:text-lg xl:text-lg xxs:text-center md:text-left mb-3 pl-7 mt-6"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+            temporibus, deleniti saepe totam excepturi dicta eius tempore atque
+            suscipit est illum repudiandae possimus ipsum dolorum eos officiis
+            voluptates natus quis.
+          </p>
+          <div class="link h-[80px] w-full mt-16">
+            <button id="videobutton4" class="h-[60px] w-[200px] pl-7">
+              <a href=""
+                ><div
+                  class="flex hover:text-greenish transition duration-150 ease-linear"
+                >
+                  <div
+                    class="animated-logo p-1 h-[40px] w-[40px] bg-white rounded-full overflow-hidden"
+                  >
+                    <video
+                      id="video-logo4"
+                      src="./src/logo folder/animated-logo.mp4"
+                    ></video>
+                  </div>
+                  <div class="content-container pl-3 pt-2">
+                    <h1>Learn more</h1>
+                  </div>
+                </div>
+              </a>
+            </button>
+          </div>
+        </div>
+        <div class="h-[300px] w-1/3 border-l-white text-white">
+          <p
+            class="animate-me xxs:text-sm sm:text-sm md:text-md lg:text-lg xl:text-lg xxs:text-center md:text-left mb-3 pl-7 mt-6"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+            temporibus, deleniti saepe totam excepturi dicta eius tempore atque
+            suscipit est illum repudiandae possimus ipsum dolorum eos officiis
+            voluptates natus quis.
+          </p>
+          <div class="link h-[80px] w-full mt-[90px]">
+            <button id="videobutton5" class="h-[60px] w-[200px] pl-7">
+              <a href=""
+                ><div
+                  class="flex hover:text-greenish transition duration-150 ease-linear"
+                >
+                  <div
+                    class="animated-logo p-1 h-[40px] w-[40px] bg-white rounded-full overflow-hidden"
+                  >
+                    <video
+                      id="video-logo5"
+                      src="./src/logo folder/animated-logo.mp4"
+                    ></video>
+                  </div>
+                  <div class="content-container pl-3 pt-2">
+                    <h1>Learn more</h1>
+                  </div>
+                </div>
+              </a>
+            </button>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="./app.js"></script>
+    <script src="./src/js/nav-button.js"></script>
+    <script src="./src/js/animated-logo.js"></script>
+    <script src="./src/js/logo-animation.js"></script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.highlight {
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 1s ease-in;
+}
+
+.highlight1 {
+  background-image: linear-gradient(#b9ff64, #b9ff64);
+}
+
+.highlight2 {
+  background-image: linear-gradient(#ffffff, #ffffff);
+}
+.active {
+  background-size: 100% 100%;
+}
+
+.box-shadow1 {
+  box-shadow: 0 5px 10px #4e4b665e;
+}
